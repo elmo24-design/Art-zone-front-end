@@ -1,0 +1,95 @@
+@media(max-width: 1125px){
+   .heading-container{
+      margin-left: 2rem;
+   }
+   .modelImg{
+      width:32rem;
+      height: 40rem;
+   }
+}
+@media(max-width: 1084px){
+   .modelImg{
+      width:28rem;
+      height: 40rem;
+   }
+}
+
+@media(max-width: 1000px){
+   header{
+      background-color: white;
+   }
+   nav{
+      display: block;
+   }
+   .icons-container{
+      margin-top: 1rem;
+      justify-content: center;
+      margin-right: 0;
+   }
+   .links{
+      display: none;
+   }
+   .links-container ul{
+      flex-direction: column;
+      padding: 1rem 0;
+      text-align: center;
+      line-height: 4rem;
+   }
+   li a{
+      color: black;
+   }
+   #bar{
+      display: block;
+      z-index: 999;
+      position: absolute;
+      top:2rem;
+      right: 3rem;
+   }
+   .visibleLink{
+      display: block;
+   }
+   .invisibleLink{
+      display: none;
+   }
+   .heading-container{
+      margin-left: 0;
+      padding: 0 2rem;
+      height:80vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+   }
+   .heading-container p{
+      text-align: center;
+      position: static;
+   }
+   .modelImg{
+      display: none;
+   }
+}
+@media(max-width: 700px){
+   .cards-container{
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .buttons{
+      margin-top: 2.5rem;
+   }
+}
+@media(max-width: 600px){
+   .heading-container h1{
+      font-size: 4rem;
+   }
+   .icons{
+      font-size: 1.5rem;
+      margin-right: 50px;
+   }
+   .follow{
+      height: 25vh;
+   }
+   .form-container{
+      padding: 0 1rem;
+   }
+}

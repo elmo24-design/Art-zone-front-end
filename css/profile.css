@@ -1,0 +1,131 @@
+.profile-container{
+   width: 76vw;
+   height: 45vh;
+   background-color: rgb(57, 73, 171);
+   border-radius: 3px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.profile-heading{
+   padding-left: 305px;
+}
+.profile-img{
+   width:8rem;
+}
+#add-btn{
+   font-size:3rem;
+   cursor: pointer;
+   position: absolute;
+   top:5.5rem;
+   right:3.2rem;
+}
+#add-btn:hover{
+   opacity: 0.9;
+}
+.inner{
+   display: grid;
+   place-items: center;
+   text-align: center;
+   position: relative;
+}
+.name-heading h3{
+   font-weight: bold;
+   font-size: 2.5rem;
+}
+.edit-btn-container{
+   width: 200px;
+   display: flex;
+   align-items: center;
+   margin-top: 5px;
+}
+.edit-btn-container a{
+   padding-left: 5px;
+}
+.bio-container{
+   background-color: white;
+   border: 1px solid rgb(177, 177, 177);
+   height:20vh;
+   margin-top: 10px;
+   border-radius: 3px;
+   padding: 0;
+}
+.heading-bio-container{
+   background-color: rgb(57, 73, 171);
+   margin: 0;
+   height: 50px;
+   text-align: center;
+   font-size: 1.5rem;
+   padding-top: 9px;
+   color: white;
+}
+.bio{
+   text-align: center;
+   padding-top: 1rem;
+}
+.social-links{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 2rem;
+}
+.social-links i{
+   font-size: 2rem;
+   padding-left: 30px;
+}
+#account{
+   font-size:15rem;
+   color: rgb(0, 81, 255);
+}
+.upload-img-modal{
+   display: flex;
+   align-items: center;
+}
+.actions{
+   display: flex;
+   flex-direction: column;
+}
+.btn-save{
+   margin-top: 1rem;
+}
+.btn{
+   width:10rem;
+   border-radius: 20px;
+}
+.btn:hover{
+   background-color: rgb(2, 91, 255);
+   color: white;
+}
+.btn-upload{
+   background-color: rgb(0, 140, 255);
+}
+.btn-save{
+   border: 1px solid  rgb(0, 140, 255);
+   background-color: transparent;
+   color: black;
+}
+#camera{
+   font-size: 3rem;
+}
+.modal-content h5{
+   display: flex;
+   align-items: center;
+}
+.modal-content span{
+   padding-left: 1rem;
+}
+@media only screen and (max-width : 992px) {
+   .nav-wrapper, .heading {
+      padding-left: 0;
+    }
+    .search{
+       display: none;
+    }
+    .grid-container{
+       display: grid;
+       grid-template-columns: 0% 100%;
+    }
+    .profile-heading{
+       margin-left: 20px;
+    }
+  }

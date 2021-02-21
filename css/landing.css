@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+:root{
+   --primary: #261587;
+   --secondary: #0F0F2E;
+}
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+}
+a{
+   text-decoration: none;
+}
+ul{
+   list-style: none;
+}
+#bar{
+   color: black;
+   display:none;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+section.landing {
+   height: 100vh;
+   width: 100vw;
+}
+.header{
+   width: 100vw;
+   position: fixed;
+   z-index: 999;
+   transition: 0.3s ease;
+}
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto;
+   padding: 1rem 0;
+   width: 88%;
+}
+
+.black {
+   background-color: white;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.black a{
+   color: black;
+}
+.logo-container a{
+   display: flex;
+   align-items: center;
+}
+.logo-container p{
+   color: var(--secondary);
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+.artzoneLogo{
+   width: 4rem;
+}
+.links{
+   display: flex;
+}
+.links-container ul{
+   display: flex;
+}
+li a{
+   margin-left: 2rem;
+   color: white;
+   font-size:0.8rem;
+}
+.icons-container{
+   display: flex;
+   margin-right: 11rem;
+}
+#icon{
+   margin-left: 2rem;
+   font-size: 1.3rem;
+   cursor: pointer;
+}
+.showcase-content{
+   display: grid;
+   max-width: 1200px;
+   margin: auto;
+}
+.modelImg{
+   position: absolute;
+   top: 0;
+   right:0;
+   z-index: -1;
+   width: 37rem;
+}
+.heading-container{
+   width:630px;
+   margin-top: 9rem;
+   position: relative;
+}
+.heading-container h1{
+   font-size:8.5rem;
+   padding: none;
+   color: var(--secondary);
+}
+.heading-container p{
+   color:  #2D2D2D;
+   font-size: 1.2rem;
+   text-align: left;
+   position: absolute;
+   top: 180px;
+}
+.buttons{
+   margin-top:4.5rem;
+}
+.btn{
+   padding: 0.5rem 2rem;
+   color:white;
+   border-radius: 3px;
+}
+.btn:hover{
+   opacity: 0.9;
+}
+.btn-signin{
+   background-color: var(--primary);
+}
+.btn-signup{
+   background-color: var(--secondary);
+   margin-left: 0.5rem;
+}
+.arrow{
+   width: 3rem;
+   margin-top: 7rem;
+   animation: move 1s infinite alternate;
+}
+@keyframes move{
+   0%{
+      transform: translateY(0)
+   }
+   100%{
+      transform: translateY(1.5rem);
+   }
+}
+
+/* About section */
+.about{
+   width: 100vw;
+   max-width: 1200px;
+   margin: auto;
+   padding: 5rem 0;
+}
+.about .headings{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.headings .wrapper{
+   width: 650px;
+}
+.about h1, h2, p{
+   text-align: center;
+}
+.about h1{
+   font-size: 2rem;
+   color: var(--secondary)
+}
+.about h2{
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+}
+.about p{
+   font-size: 1.1rem;
+}
+.cards-container{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px;
+}
+.card{
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0 20px 10px -15px rgb(197 192 249 / 20%);
+   transition: 0.3s ease-in-out;
+}
+.card img{
+   width: 100%;
+}
+.card:hover{
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+/* latest posts */
+.latest-posts h1{
+   text-align: left;
+   margin-top: 3rem;
+   margin-bottom: 1rem;
+}
+.person img{
+   width:2rem;
+   margin-right: 0.5rem;
+}
+.person{
+   display: flex;
+   align-items: center;
+}
+
+/* follow us section */
+.follow, footer{
+   width: 100vw;
+   height:30vh;
+   background-color: var(--secondary);
+   color: white;
+}
+.follow-container h1{
+   font-size: 1.5rem;
+   padding: 2rem;
+   margin-left: 30px;
+   text-align: center;
+}
+.icons{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   font-size: 3rem;
+}
+#icon1{
+   margin-left: 3rem;
+   cursor: pointer;
+}
+#icon1:hover{
+   animation: dot 1s ease-in-out infinite alternate;
+}
+@keyframes dot{
+   0%{
+      transform: scale(1)
+   }
+   100%{
+      transform: scale(1.2);
+   }
+}
+
+/* Contact Section */
+.contact{
+   height: 80vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.form-container{
+   width: 600px;
+}
+input{
+   width: 100%;
+   border: none;
+   padding: 1rem;
+   background-color: #EFEFEF;
+}
+.form-group{
+   padding: 0.5rem 0;
+}
+.contactBtn{
+   padding: 1rem 2rem;
+   border: none;
+   background-color: var(--primary);
+   color: white;
+   margin-top: 1rem;
+   cursor: pointer;
+}
+.contactBtn:hover{
+   opacity: 0.9;
+}
+
+/* footer section */
+footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+

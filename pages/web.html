@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="/css/home.css">
+  <title>Art Zone</title>
+</head>
+<body>
+   <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+   <div class="modal-content">
+      <h4>Create a post</h4>
+      <form enctype="multipart/form-data">
+         <div class="input-field">
+            <i class="material-icons prefix">folder</i>
+            <input type="text" id="title">
+            <label for="title">Title</label>
+         </div>
+         <div class="input-field">
+            <i class="material-icons prefix">create</i>
+            <textarea id="desc" class="materialize-textarea"></textarea>
+            <label for="desc">Say something about this post</label>
+         </div>
+         <label>Upload Image thumbnail</label>
+         <div class="input-field">
+            <input type="file" id="file">
+         </div>
+         <div class="input-field">
+            <button class="btn indigo">Post</button>
+         </div>
+      </form>
+   </div>
+   <div class="modal-footer">
+     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+   </div>
+  </div>
+     <!-- navbar -->
+   <header>
+      <nav class="nav-wrapper transparent navbar-fixed">
+         <ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+            <li class="black-text logo-container">
+               <img src="/images/logo.png" alt="" class="logo">
+               <p class="logo-heading">ArtZone</p> 
+            </li>
+         </ul>
+         <ul class="right">
+            <li style="margin-top: 5px;" class="search">
+               <form>
+                  <div class="input-field">
+                    <input id="search" type="search" required class="transparent">
+                    <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+            </li>
+            <li>
+               <a href="/index.html" class="black-text">Sign Out
+                  <i class="material-icons right" style="margin-top: 4px;">logout</i>
+               </a>
+            </li>
+            <li><a href="" class="black-text" ></a></li>
+          </ul>
+      </nav>
+   </header>
+
+
+  <!-- sidenav -->
+  <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li>
+         <div class="user-view">
+            <div class="background indigo darken-1">
+               
+            </div>
+            <a href="#user"><img class="circle" src="/images/avatar-1.png"></a>
+            <a href="#name"><span class="white-text name">Elmo Mahupil</span></a>
+            <a href="#email"><span class="white-text email">mahupil24@gmail.com</span></a>
+         </div>
+      </li>
+      <li><a href="#modal1" class="waves-effect modal-trigger"><i class="material-icons">create</i>Create a post</a></li>
+      <li><a href="./home.html" class="waves-effect"><i class="material-icons">home</i>Home</a></li>
+      <li><a href="./profile.html" class="waves-effect"><i class="material-icons">person</i>My profile</a></li>
+      <li><a href="/pages/works.html" class="waves-effect"><i class="material-icons">folder</i>My Works</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Contents</a></li>
+      <li  class="active"><a class="waves-effect" href="/pages/web.html">Web Designs</a></li> 
+      <li><a class="waves-effect" href="#!">Graphic Arts</a></li> 
+      <li><a class="waves-effect" href="#!">Photography</a></li> 
+      <li><a class="waves-effect" href="#!">Animations</a></li> 
+      <li><a class="waves-effect" href="#!">3d Modelling</a></li> 
+      <li><a class="waves-effect" href="#!">Paintings</a></li> 
+      <li><a class="waves-effect" href="/pages/artists.html">Artists</a></li>
+   </ul>
+
+   <!-- latest posts container -->
+   <section class="section">
+      <h5 class="heading">Web Designs</h5>
+      <div class="grid-container">
+         <div>
+
+         </div>
+         <div class="row">
+            <!-- Card 1 -->
+            <div class="col s12 m6 l4">
+               <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="/images/d1.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Sample Design 1<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Sample Design 1<i class="material-icons right">close</i></span>
+                    <p>Just a sample description</p>
+                  </div>
+                  <div class="card-action">
+                     <div>
+                        <a href="/pages/show.html" class="pink-text left">View Post</a>
+                        <div class="right icons">
+                           <i class="material-icons right pink-text">favorite</i>
+                           <a href="/pages/show.html">
+                              <i class="material-icons right grey-text">comment</i>
+                           </a>
+                           <small class="likes pink-text">8</small>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card-action-bottom">
+                  <img src="/images/avatar-2.png" alt="" class="small-img">
+                  <p>Kim Yoo-Jung</p>
+                </div>
+            </div>
+   
+            <!-- Card 2 -->
+            <div class="col s12 m6 l4">
+               <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="/images/d2.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Sample Design 2<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Sample Design 2<i class="material-icons right">close</i></span>
+                    <p>Just a sample description</p>
+                  </div>
+                  <div class="card-action">
+                     <div>
+                        <a href="/pages/show.html" class="pink-text left">View Post</a>
+                        <div class="right icons">
+                           <i class="material-icons right pink-text">favorite</i>
+                           <a href="/pages/show.html">
+                              <i class="material-icons right grey-text">comment</i>
+                           </a>
+                           <small class="likes pink-text">10</small>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card-action-bottom">
+                  <img src="/images/avatar-1.png" alt="" class="small-img">
+                  <p>Elmo Mahupil</p>
+                </div>
+            </div>
+   
+            <!-- Card 3 -->
+            <div class="col s12 m6 l4">
+               <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="/images/d3.png">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Sample Design 3<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Sample Design 3<i class="material-icons right">close</i></span>
+                    <p>Just a sample description</p>
+                  </div>
+                  <div class="card-action">
+                     <div>
+                        <a href="/pages/show.html" class="pink-text left">View Post</a>
+                        <div class="right icons">
+                           <i class="material-icons right pink-text">favorite_border</i>
+                           <a href="/pages/show.html">
+                              <i class="material-icons right grey-text">comment</i>
+                           </a>
+                           <small class="likes pink-text">1</small>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+                <div class="card-action-bottom">
+                  <img src="/images/avatar-3.png" alt="" class="small-img">
+                  <p>Park Min-Young</p>
+                </div>
+            </div>
+         </div>
+      </div>
+   </section>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+         var elems = document.querySelectorAll('.sidenav');
+         var instances = M.Sidenav.init(elems, {
+            onOpenStart: null,
+         });
+
+         var elems = document.querySelectorAll('.modal');
+         var instances = M.Modal.init(elems, {
+            inDuration: 250
+         });
+      });
+  </script>
+</body>
+</html>
